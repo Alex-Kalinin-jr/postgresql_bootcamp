@@ -1,3 +1,4 @@
+--preparation
 create table data_table(
     point_one varchar(4),
     point_two varchar(4),
