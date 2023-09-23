@@ -6,3 +6,4 @@
 - day 07: aggregate functions
 - day 08: transactions ODPC side effects
 - day 09: functions and triggers
+- team 00: recursive query
