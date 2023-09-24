@@ -1,5 +1,9 @@
 # postgresql_bootcamp
 
+- day 00: simple selects
+- day 01: sets (union, intersect)
+- day 02: joins
+- day 03: joins, unions, inserts
 - day 04: operations with views
 - day 05: indexes
 - day 06: constraints and comments
