@@ -239,8 +239,8 @@ begin
     return query
     WITH RECURSIVE cte_rec AS (
         SELECT 
-            cast(0 as numeric) AS fibo, 
-            cast(1 as numeric) AS fibo_last,
+            0::numeric AS fibo, 
+            1::numeric AS fibo_last,
             1 as counter
         UNION 
         SELECT 
@@ -253,4 +253,3 @@ begin
     SELECT fibo FROM cte_rec;
 end;
 $$ language plpgsql;
-

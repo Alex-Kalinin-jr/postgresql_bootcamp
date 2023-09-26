@@ -112,7 +112,7 @@ select address, to_char(formula, 'FM99.99'), to_char(average, 'FM99.99'),
 CASE when formula > average then 'true' else 'false' end
 from
     (select address,
-    round(max(age) - (cast(min(age) as numeric) / cast(max(age) as numeric)), 2) as formula, 
+    round(max(age) - (min(age)::numeric / max(age)::numeric), 2) as formula, 
     avg(age) as average
     from person
     group by address) as buff
